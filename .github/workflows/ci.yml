@@ -6,8 +6,6 @@ on:
       - '**'
     tags-ignore:
       - 'v*'
-      # Ignore version tags — those are handled by deploy.yml
-      # Without this, CI would run on version bumps too
 
 jobs:
   build-and-preview:
