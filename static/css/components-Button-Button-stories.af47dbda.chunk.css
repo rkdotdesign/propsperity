@@ -1,0 +1,71 @@
+/* Base styles — applied to every button */
+.propsperity-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: system-ui, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    transition: transform 0.1s ease, opacity 0.2s ease;
+  }
+  
+  /* Subtle press effect when clicked */
+  .propsperity-btn:active {
+    transform: scale(0.97);
+  }
+  
+  /* Disabled state */
+  .propsperity-btn:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+  }
+  
+  /* ---- Variants ---- */
+  .propsperity-btn--primary {
+    background-color: #4f46e5;
+    color: white;
+  }
+  
+  .propsperity-btn--primary:hover:not(:disabled) {
+    background-color: #4338ca;
+  }
+  
+  .propsperity-btn--secondary {
+    background-color: #f1f5f9;
+    color: #1e293b;
+    border: 1px solid #e2e8f0;
+  }
+  
+  .propsperity-btn--secondary:hover:not(:disabled) {
+    background-color: #e2e8f0;
+  }
+  
+  .propsperity-btn--danger {
+    background-color: #ef4444;
+    color: white;
+  }
+  
+  .propsperity-btn--danger:hover:not(:disabled) {
+    background-color: #dc2626;
+  }
+  
+  /* ---- Sizes ---- */
+  .propsperity-btn--small {
+    padding: 6px 14px;
+    font-size: 12px;
+  }
+  
+  .propsperity-btn--medium {
+    padding: 10px 22px;
+    font-size: 14px;
+  }
+  
+  .propsperity-btn--large {
+    padding: 14px 30px;
+    font-size: 16px;
+  }
+
+/*# sourceMappingURL=components-Button-Button-stories.af47dbda.chunk.css.map*/
