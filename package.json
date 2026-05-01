@@ -56,15 +56,18 @@
   "devDependencies": {
     "@storybook/addon-a11y": "^10.3.6",
     "@storybook/addon-docs": "^10.3.6",
-    "@storybook/preset-create-react-app": "^10.3.6",
     "@storybook/react-vite": "^10.3.6",
     "@storybook/react-webpack5": "^10.3.6",
+    "@types/prop-types": "^15.7.15",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.1",
     "chromatic": "^16.6.3",
     "eslint-plugin-storybook": "^10.3.6",
     "gh-pages": "^6.3.0",
     "prop-types": "^15.8.1",
     "storybook": "^10.3.6",
+    "typescript": "^6.0.3",
     "vite": "^8.0.10",
     "webpack": "^5.106.2"
   }
