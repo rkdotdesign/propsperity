@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 
 // ─────────────────────────────────────────────
 // THE SKY COLOUR MAP
@@ -178,12 +179,20 @@ function SkyGradient({
   );
 }
 
+SkyGradient.propTypes = {
+    time: PropTypes.string,
+    location: PropTypes.string,
+    width: PropTypes.string,
+    height: PropTypes.string,
+    children: PropTypes.node,
+};
+  
 SkyGradient.defaultProps = {
-  location: null,
-  time: null,
-  width: '100%',
-  height: '400px',
-  children: null,
+    time: null,
+    location: null,
+    width: '100%',
+    height: '400px',
+    children: null,
 };
 
 export default SkyGradient;
