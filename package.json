@@ -30,9 +30,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build -o storybook-static",
-    "predeploy": "npm run build-storybook",
-    "deploy": "gh-pages -d storybook-static"
+    "build-storybook": "storybook build -o storybook-static"
   },
   "eslintConfig": {
     "extends": [
@@ -54,6 +52,7 @@
     ]
   },
   "devDependencies": {
+    "@changesets/cli": "^2.31.0",
     "@storybook/addon-a11y": "^10.3.6",
     "@storybook/addon-docs": "^10.3.6",
     "@storybook/react-vite": "^10.3.6",

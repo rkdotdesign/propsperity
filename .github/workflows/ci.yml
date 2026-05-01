@@ -6,8 +6,6 @@ on:
       - '**'
     tags-ignore:
       - 'v*'
-      # Ignore version tags — those are handled by deploy.yml
-      # Without this, CI would run on version bumps too
 
 jobs:
   build-and-preview:
@@ -36,3 +34,15 @@ jobs:
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           storybookBuildDir: storybook-static
+
+      - name: Check for changeset
+        uses: changesets/action@v1
+        with:
+          version: 'false'
+          publish: 'false'
+          createGithubReleases: 'false'
+        env:
+          GITHUB_TOKEN: ${{ secrets.CHANGESETS_TOKEN }}
+        # This step makes the Changesets bot comment on your PR
+        # If no changeset file is found it posts a warning with
+        # a link to add one via the GitHub web editor
