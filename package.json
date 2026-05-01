@@ -23,16 +23,14 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
-    "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
+    "build-storybook": "storybook build -o storybook-static",
     "predeploy": "npm run build-storybook",
     "deploy": "gh-pages -d storybook-static"
   },
@@ -59,11 +57,14 @@
     "@storybook/addon-a11y": "^10.3.6",
     "@storybook/addon-docs": "^10.3.6",
     "@storybook/preset-create-react-app": "^10.3.6",
+    "@storybook/react-vite": "^10.3.6",
     "@storybook/react-webpack5": "^10.3.6",
+    "@vitejs/plugin-react": "^6.0.1",
     "eslint-plugin-storybook": "^10.3.6",
     "gh-pages": "^6.3.0",
     "prop-types": "^15.8.1",
     "storybook": "^10.3.6",
+    "vite": "^8.0.10",
     "webpack": "^5.106.2"
   }
 }
