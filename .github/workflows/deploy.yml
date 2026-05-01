@@ -4,8 +4,9 @@ on:
   push:
     tags:
       - 'v*'
-      # Only runs when a version tag like v1.2.0 is pushed
-      # This is created automatically by npm version
+
+permissions:
+  contents: write
 
 jobs:
   deploy:
