@@ -31,6 +31,7 @@ jobs:
         run: npm ci
 
       - name: Create Version PR or Publish
+        id: changesets
         uses: changesets/action@v1
         with:
           publish: npm publish
@@ -42,9 +43,11 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Build Storybook
+        if: steps.changesets.outputs.published == 'true'
         run: npm run build-storybook
 
       - name: Deploy Storybook to GitHub Pages
+        if: steps.changesets.outputs.published == 'true'
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
