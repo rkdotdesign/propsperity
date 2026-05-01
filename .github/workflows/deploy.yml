@@ -8,7 +8,6 @@ on:
 permissions:
   contents: write
   pull-requests: write
-  # pull-requests: write lets Changesets open the Version PR
 
 jobs:
   deploy:
@@ -20,8 +19,6 @@ jobs:
         with:
           fetch-depth: 0
           token: ${{ secrets.CHANGESETS_TOKEN }}
-          # Use the Changesets token so it can push commits
-          # and open PRs on your behalf
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -43,13 +40,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.CHANGESETS_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        # This is the magic step — it does ONE of two things:
-        # IF there are pending changeset files:
-        #   → Opens/updates a "Version PR" automatically
-        # IF the Version PR was just merged:
-        #   → Runs npm publish
-        #   → Updates CHANGELOG.md
-        #   → Bumps version in package.json
 
       - name: Build Storybook
         run: npm run build-storybook
