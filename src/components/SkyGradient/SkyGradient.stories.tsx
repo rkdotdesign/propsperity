@@ -8,45 +8,16 @@ const meta = {
 
 export default meta;
 
-export const DeepNight = () => (
-  <SkyGradient time="02:00" width="100%" height="300px" />
-);
-
-export const PreDawn = () => (
-  <SkyGradient time="05:00" width="100%" height="300px" />
-);
-
-export const Sunrise = () => (
-  <SkyGradient time="06:30" width="100%" height="300px" />
-);
-
-export const Morning = () => (
-  <SkyGradient time="08:00" width="100%" height="300px" />
-);
-
-export const Midday = () => (
-  <SkyGradient time="12:00" width="100%" height="300px" />
-);
-
-export const Afternoon = () => (
-  <SkyGradient time="15:00" width="100%" height="300px" />
-);
-
-export const Sunset = () => (
-  <SkyGradient time="18:00" width="100%" height="300px" />
-);
-
-export const Dusk = () => (
-  <SkyGradient time="20:00" width="100%" height="300px" />
-);
-
-export const Night = () => (
-  <SkyGradient time="22:00" width="100%" height="300px" />
-);
-
-export const AutoCurrentTime = () => (
-  <SkyGradient width="100%" height="300px" />
-);
+export const DeepNight = () => <SkyGradient time="02:00" width="100%" height="300px" />;
+export const PreDawn = () => <SkyGradient time="05:00" width="100%" height="300px" />;
+export const Sunrise = () => <SkyGradient time="06:30" width="100%" height="300px" />;
+export const Morning = () => <SkyGradient time="08:00" width="100%" height="300px" />;
+export const Midday = () => <SkyGradient time="12:00" width="100%" height="300px" />;
+export const Afternoon = () => <SkyGradient time="15:00" width="100%" height="300px" />;
+export const Sunset = () => <SkyGradient time="18:00" width="100%" height="300px" />;
+export const Dusk = () => <SkyGradient time="20:00" width="100%" height="300px" />;
+export const Night = () => <SkyGradient time="22:00" width="100%" height="300px" />;
+export const AutoCurrentTime = () => <SkyGradient width="100%" height="300px" />;
 
 export const WithChildren = () => (
   <SkyGradient time="06:30" width="100%" height="400px">
