@@ -1,0 +1,11 @@
+# Don't publish these to npm
+node_modules/
+storybook-static/
+.storybook/
+src/stories/
+public/
+build/
+
+# Config files people don't need
+.env
+.eslintrc*

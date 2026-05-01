@@ -2,8 +2,20 @@
   "name": "propsperity",
   "version": "0.1.0",
   "main": "src/index.js",
+  "description": "A personal React UI component library",
+  "keywords": [
+    "react",
+    "ui",
+    "components",
+    "design-system"
+  ],
+  "author": "rkdotdesign",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rkdotdesign/propsperity.git"
+  },
   "homepage": "https://rkdotdesign.github.io/propsperity",
-  "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
