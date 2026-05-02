@@ -1,5 +1,11 @@
 # propsperity
 
+## 1.2.4
+
+### Patch Changes
+
+- c7c221a: add Vitest setup and SkyGradient tests
+
 ## 1.2.3
 
 ### Patch Changes
