@@ -8,6 +8,8 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  pages: write
+  id-token: write
 
 jobs:
   deploy:
@@ -47,9 +49,12 @@ jobs:
         if: steps.changesets.outputs.published == 'true'
         run: npm run build-storybook
 
-      - name: Deploy Storybook to GitHub Pages
+      - name: Upload Pages artifact
         if: steps.changesets.outputs.published == 'true'
-        uses: peaceiris/actions-gh-pages@v3
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: storybook-static
+          path: storybook-static
+
+      - name: Deploy to GitHub Pages
+        if: steps.changesets.outputs.published == 'true'
+        uses: actions/deploy-pages@v4
