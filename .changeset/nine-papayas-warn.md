@@ -1,5 +1,5 @@
 ---
-"propsperity": feature
+"propsperity": patch
 ---
 
 add RouteSelector component
