@@ -1,5 +1,11 @@
 # propsperity
 
+## 1.2.5
+
+### Patch Changes
+
+- 8e29412: add RouteSelector component
+
 ## 1.2.4
 
 ### Patch Changes
