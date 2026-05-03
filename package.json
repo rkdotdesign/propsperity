@@ -1,6 +1,6 @@
 {
   "name": "propsperity",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "main": "src/index.js",
   "description": "A personal React UI component library",
   "keywords": [

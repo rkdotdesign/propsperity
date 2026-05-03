@@ -1,5 +1,11 @@
 # propsperity
 
+## 1.2.6
+
+### Patch Changes
+
+- dc52a7b: Refactor GitHub Pages deployment for Storybook
+
 ## 1.2.5
 
 ### Patch Changes
