@@ -1,0 +1,93 @@
+.rs-container {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 20px 24px;
+    gap: 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, sans-serif;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  }
+  
+  /* ---- Endpoint blocks ---- */
+  .rs-endpoint {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+  
+  .rs-endpoint--swapping {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  
+  .rs-label {
+    font-size: 11px;
+    font-weight: 500;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+  }
+  
+  .rs-city {
+    font-size: 28px;
+    font-weight: 700;
+    color: #0f172a;
+    line-height: 1.1;
+    letter-spacing: -0.5px;
+  }
+  
+  .rs-meta {
+    font-size: 12px;
+    color: #94a3b8;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 180px;
+  }
+  
+  /* ---- Divider + swap button ---- */
+  .rs-divider {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 16px;
+    flex-shrink: 0;
+  }
+  
+  .rs-divider-line {
+    width: 1px;
+    height: 48px;
+    background: #e2e8f0;
+  }
+  
+  .rs-swap-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1.5px solid #e2e8f0;
+    background: #ffffff;
+    color: #64748b;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+  }
+  
+  .rs-swap-btn:hover {
+    background: #f8fafc;
+    border-color: #94a3b8;
+    color: #0f172a;
+  }
+  
+  .rs-swap-btn--active {
+    transform: rotate(180deg);
+    background: #f1f5f9;
+  }
