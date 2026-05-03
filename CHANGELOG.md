@@ -1,5 +1,11 @@
 # propsperity
 
+## 1.2.7
+
+### Patch Changes
+
+- 465cbc9: Update GitHub Actions for Storybook deployment
+
 ## 1.2.6
 
 ### Patch Changes
